@@ -273,7 +273,7 @@ To avoid this problem, do not pass <b>NULL</b> for <i>lpApplicationName</i>. If 
 
 
 ``` syntax
-	LPTSTR szCmdline[] = _tcsdup(TEXT("\"C:\\Program Files\\MyApp\" -L -S"));
+	LPTSTR szCmdline = _tcsdup(TEXT("\"C:\\Program Files\\MyApp\" -L -S"));
 	CreateProcess(NULL, szCmdline, /*...*/);
 ```
 
